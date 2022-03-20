@@ -69,7 +69,8 @@ public class StatisticAnalysis {
 
     private static Set<Character> fileAnalyze() {
         Set<Character> setOfTopCharacters = new HashSet<>();
-        for (int i = 0; i < Tools.getCode(2); i++) {
+        int countFileToAnalysis = Tools.getCode(2);
+        for (int i = 0; i < countFileToAnalysis; i++) {
             setOfTopCharacters.addAll(findTopLetters(Tools.getPath()));
         }
         return setOfTopCharacters;
